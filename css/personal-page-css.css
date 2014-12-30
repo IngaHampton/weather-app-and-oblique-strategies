@@ -438,7 +438,7 @@ h3#northern-ireland
     width:100%;
 }
 
-.icon
+.home-icon
 {
         z-index: 2px;
         position:absolute;
@@ -455,7 +455,7 @@ h3#northern-ireland
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
         }
 
-.icon:hover 
+.home-icon:hover 
         {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
@@ -856,33 +856,22 @@ a:hover
         transform: scale(1.1);
         }
 
-
-
-.hi-icon-effect-4 .twitter {
-	width: 92px;
-	height: 92px;
-	box-shadow: 0 0 0 3px rgba(255,255,255,1);	
+.icons
+{
+display:inline;
+position: absolute;
+margin: 10%
 }
 
-.hi-icon-effect-4a .twitter {
-	-webkit-transition: box-shadow 0.2s;
-	-moz-transition: box-shadow 0.2s;
-	transition: box-shadow 0.2s;
+.twitter
+
+{
+width:10%;
 }
 
-.hi-icon-effect-4 .twitter:before {
-	line-height: 92px;
+.github
+
+{
+width:10%;
 }
 
-.hi-icon-effect-4 .twitter:after {
-	top: -4px;
-	left: -4px;
-	padding: 0;
-	z-index: 10;
-	border: 6px red ;
-}
-
-.hi-icon-effect-4 .twitter:hover {
-	box-shadow: 0 0 0 0 rgba(255,255,255,0);
-	color: #fff;
-}
