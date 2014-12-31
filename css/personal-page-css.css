@@ -836,7 +836,7 @@ a
         font-family: "Amatic SC";
         font-size: 50px;
         text-decoration: none;
-        display: inline-block;
+        display: inline;
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
         -webkit-transition-property: -webkit-transform;
@@ -850,28 +850,52 @@ a
         
 a:hover 
         {
-        color: #2C221B ;
+        color: #fff ;
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
         }
 
-.icons
-{
-display:inline;
-position: absolute;
-margin: 10%
+.icon a {
+
+  opacity: 0.3;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+
+.icon a:hover {
+  opacity: 1;
 }
 
 .twitter
 
 {
+
 width:10%;
+
+
 }
 
 .github
 
 {
-width:10%;
+
+width: 10%;
+
+
 }
+
+.flickr
+
+{
+
+width: 10%;
+
+
+}
+
+
 
