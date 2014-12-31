@@ -855,6 +855,11 @@ a:hover
         -ms-transform: scale(1.1);
         transform: scale(1.1);
         }
+.icon
+{
+position:absolute;
+margin: 5% 50% 0% 10%;
+}
 
 .icon a {
 
@@ -874,7 +879,7 @@ a:hover
 
 {
 
-width:10%;
+width:20%;
 
 
 }
@@ -883,7 +888,7 @@ width:10%;
 
 {
 
-width: 10%;
+width: 20%;
 
 
 }
@@ -892,7 +897,7 @@ width: 10%;
 
 {
 
-width: 10%;
+width: 20%;
 
 
 }
