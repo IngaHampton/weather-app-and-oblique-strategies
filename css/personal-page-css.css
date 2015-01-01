@@ -647,6 +647,9 @@ margin: 0% 45%;
 z-index: 2px;
       
 }
+
+.camera
+{width:70%;}
 .six
 
         {
@@ -858,7 +861,7 @@ a:hover
 .icon
 {
 position:absolute;
-margin: 5% 50% 0% 10%;
+margin: 5% 40% 0% 15%;
 }
 
 .icon a {
@@ -879,7 +882,7 @@ margin: 5% 50% 0% 10%;
 
 {
 
-width:30%;
+width:25%;
 
 
 }
@@ -888,7 +891,7 @@ width:30%;
 
 {
 
-width: 30%;
+width: 25%;
 
 
 }
@@ -897,7 +900,7 @@ width: 30%;
 
 {
 
-width: 30%;
+width: 25%;
 
 
 }
