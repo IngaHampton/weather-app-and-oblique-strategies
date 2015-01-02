@@ -53,31 +53,87 @@ h2#welcome
         text-align: justify;
         }
 
-.nav
+#menu { 
+	width: 100%;
+    background-color: #414040;
+    opacity: 0.9;
+	height: auto;
+	position: fixed;
+	margin-top: 0px;
+    min-width: auto;
+	max-width: 600px;
+}
+#menu ul 
 
+    {
+    list-style: none;
+	display: block;
+	margin: auto;
+	list-style: none;
+    width: 600px;
+    }
+
+#menu li
+    
+    {
+    color: #DBDADA;	
+	float: right;
+    font-family: "amatic SC";
+    list-style: none;
+    float:left; 
+    
+    }
+    
+    #menu li a {
+    
+    color: #DBDADA;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+        
+    }
+    
+    #menu li a:hover { 
+    color: #fff;
+        
+    }
+        
+    
+
+
+<!--.menu
 {
-background: #404041;
+background-color: #414040;
 position: fixed;
 z-index: 100;
-padding: 1% 40% 1% 42%;
-color: #DBDADA;
-
-
+padding: 1% 30%;
+min-width: auto;
 }
+ 
 
-.nav ul li:hover
+.menu li
 
-{background: #323132;
-display: inline-block;
-
-}
-
-.nav ul li
 {
-float: left;
-margin: 0% 10% 0% -10%;
+margin: 0px 10px 10px -20px;
+ max-width: 300px;
+	width: 30%;
+	height: 10%;
+    float: right; 
+    margin: 0px auto; 
+
 }
 
+.menu a {
+    display: inline;
+    width: 60px;
+}
+
+.menu a :hover{
+    display: inline;
+    width: 100px;
+    background-color: #000;
+}
+-->
 .me
 
 {
@@ -87,7 +143,7 @@ margin: 0% 10% 0% -10%;
 }
 
 
-.hello
+#hello
         {
         position:relative;
         padding: 0px 0px 0px 0px;
@@ -95,7 +151,7 @@ margin: 0% 10% 0% -10%;
         max-width: 100%;
         }
 
-.hello:after
+#hello:after
         {
         background: linear-gradient(-40deg, #393947 16px,                 transparent 0), linear-gradient(40deg, #393947 16px,          transparent 0);
 
@@ -897,7 +953,7 @@ z-index: 2px;
         height: 70px;
         }
 
-.more
+#more
         {
         position:relative;
         padding: 10px 0px 0px 0px;
