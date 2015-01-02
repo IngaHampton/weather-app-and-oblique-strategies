@@ -568,6 +568,7 @@ margin: 0% -5%;
       
 }
 
+
 #create {
         height: 660px;
         width: 663px;
@@ -747,7 +748,7 @@ z-index: 2px;
 
         {
         position:relative;
-        padding: 10px 10px 120px 10px;
+        padding: 0px 0px 10px 0px;
         background: #8C8395;
         max-width: 100%;
         }
@@ -849,11 +850,15 @@ margin: 0% 45%;
 z-index: 2px;
       
 }
+
+.travel
+
+{width:100%}
 .nine
 
         {
         position:relative;
-        padding: 10px 10px 120px 10px;
+        padding: 0px 10px 10px 10px;
         background: #8C8395;
         max-width: 100%;
         }
@@ -946,7 +951,7 @@ a
         
 a:hover 
         {
-        color: #fff ;
+        color: #2C221B;
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
