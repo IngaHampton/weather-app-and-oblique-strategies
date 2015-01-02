@@ -19,14 +19,14 @@ h1
         letter-spacing: 13px; 
         font-family: "Amatic SC";
         font-weight: normal;
-        margin: 15% 25%;
+        margin: 20% 25%;
         font-weight: 700;
         z-index: 1px;
         position: absolute;
         
         }
 
-p
+#one
         {
         font-size: 30px;
         letter-spacing: 5px; 
@@ -34,13 +34,55 @@ p
         font-family: "Amatic SC";
         font-weight: normal;
         padding-bottom: 10px;
-        margin:-90% 10% 0% 10%;
-        font-weight: 700;
+        margin:-104% 10% 0% 10%;
+        font-weight: 400;
         z-index: 1px;
         position: absolute;
-        color: #414040;
+        color: #353535;
+        }
+#two
+        {
+        font-size: 30px;
+        letter-spacing: 5px; 
+        line-height: 1.35em;
+        font-family: "Amatic SC";
+        font-weight: normal;
+        padding-bottom: 10px;
+        margin:-91% 10% 0% 10%;
+        font-weight: 400;
+        z-index: 1px;
+        position: absolute;
+        color: #353535;
+        }
+#three
+        {
+        font-size: 30px;
+        letter-spacing: 5px; 
+        line-height: 1.35em;
+        font-family: "Amatic SC";
+        font-weight: normal;
+        padding-bottom: 10px;
+        margin:-65% 10% 0% 10%;
+        font-weight: 400;
+        z-index: 1px;
+        position: absolute;
+        color: #353535;
         }
 
+#four
+        {
+        font-size: 70px;
+        letter-spacing: 5px; 
+        line-height: 1.35em;
+        font-family: "Amatic SC";
+        font-weight: normal;
+        padding-bottom: 10px;
+        margin:-40% 10% 0% 35%;
+        font-weight: 400;
+        z-index: 1px;
+        position: absolute;
+        color: #353535;
+        }
 img
 
 {
