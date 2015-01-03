@@ -15,23 +15,73 @@ body
     
 h1 
         {
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         line-height: 1.35em;
-        font-family: "Quicksand";
+        font-family: "Anonymous Pro";
         font-weight: normal;
         margin: 10px 0 10px 0;
+        color: #DBDADA;
         }
 .bee
 {
 width: 60%;
 }
 
+.part1
+{
+width: 100%
+}
+
+
+#hundred
+
+{
+font-family:"Anonymous Pro";
+position: absolute;
+font-size: 250px;
+z-index: 1;
+margin: -79% 23%;
+color: #DBDADA
+}
+
+#years
+
+{
+font-family:"helvetica";
+position: absolute;
+font-size: 100px;
+z-index: 1;
+margin: -63% 24.5%;
+color: #404041
+}
+
+#of
+
+{
+font-family:"Anonymous Pro";
+position: absolute;
+font-size: 90px;
+z-index: 1;
+margin: -70% 53%;
+color: #404041
+}
+
+#paul
+
+{
+font-family:"Helvetica";
+position: absolute;
+font-size: 118px;
+z-index: 1;
+margin: -64.1% 0% 0% 49.9%;
+color: #DBDADA
+}
 
 
 p
         {
-        font-family:"Quicksand";
+        font-family:"Baskerville";
         letter-spacing: 2px;
         padding: 10px;
         line-height: 1.35em;
@@ -45,10 +95,11 @@ p
 .paul
         {
         position:relative;
-        padding: 10px 10px 13px 10px;
+        padding: 10px 10px 160px 10px;
         background: #404041;
         max-width: 100%;
         }
+
 
 
 .year
@@ -59,18 +110,7 @@ p
         max-width: 100%;
 }
 
-h2
-        {
-        font-size: 15px;
-        text-transform: uppercase;
-        letter-spacing: 5px; 
-        line-height: 1.35em;
-        font-family: "Quicksand";
-        font-weight: normal;
-        margin: 10% 10% 10% 10%;
-        padding-bottom: 0px;
-        padding-top: 50px;
-        }
+
 
 .section-one
         {
@@ -80,12 +120,52 @@ h2
         max-width: 110%;
         }
 
+#title
+
+{
+font-family:"helvetica";
+position: absolute;
+font-size: 30px;
+z-index: 1;
+margin: -20% 5%;
+color: #DBDADA;
+}
+
+#hundred-years
+
+{
+font-family:"helvetica";
+position: absolute;
+font-size: 70px;
+z-index: 1;
+margin: -14% 5%;
+color: #C4A7A7;
+}
+
+#prove
+
+{
+font-family:"helvetica";
+position: absolute;
+font-size: 30px;
+z-index: 1;
+margin: -5% 5%;
+color: #DBDADA;
+}
+
+.circles
+{
+width: 100%;
+position: absolute;
+z-index: 1;
+margin: 0% 0% 0% -50%;
+}
 
 .quote
         {
         position:relative;
-        padding: 5% 10% 9% 10%;
-        background: #97A371;
+        padding: 18% 10% 8% 10%;
+        background: #A1BCBF;
         max-width: 100%;
         }
 
