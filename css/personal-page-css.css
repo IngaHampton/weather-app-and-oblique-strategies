@@ -558,15 +558,49 @@ h3#northern-ireland
 .drop-two
 {
 width:10%;
-
+position: absolute;
+margin: 0% 45%;
       
+}
+
+#student
+{
+
+position: absolute;
+margin: 12% 0% 0% 4.5%;
+
+}
+
+#quote
+{
+
+position: absolute;
+margin: 20% 25%;
+font-weight: 400;
+font-size: 60px;
+
+}
+
+#steve
+
+{
+
+position: absolute;
+margin: 35% 0% 0% 43%;
+font-size: 30px
+    
+}
+
+.ship
+{
+width: 100%;
 }
 
 .two
 
         {
         position:relative;
-        padding: 10px 10px 120px 10px;
+        padding: 0px 0px 0px 0px;
         background: #86A98F;
         max-width: 100%;
         }
@@ -816,6 +850,39 @@ margin: 0% 45%;
 z-index: 2px;
       
 }
+
+.t-rex
+
+{
+width: 12%;
+position: absolute;
+margin: 4% 0% 0% -6%;
+display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+
+.t-rex:hover 
+        {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        }
+
+.brain
+
+{
+width: 70%;
+padding-bottom: 10%
+}
+
 .seven
         {
         position:relative;
@@ -926,6 +993,7 @@ margin: 0% 45%;
 z-index: 2px;
       
 }
+
 .ten
         {
         position:relative;
