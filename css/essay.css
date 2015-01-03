@@ -11,6 +11,7 @@ body
         background-color:#404041; 
         color: white;
         text-align: center;
+    
         }
     
 h1 
@@ -23,15 +24,145 @@ h1
         margin: 10px 0 10px 0;
         color: #DBDADA;
         }
+
+#menu { 
+	width: 100%;
+    background-color: black;
+    opacity: 0.5;
+	height: auto;
+	position: fixed;
+	margin-top: 0px;
+    min-width: auto;
+	max-width: 600px;
+    z-index: 100;
+    padding: 1% 29%;
+}
+#menu ul 
+
+    {
+    list-style: none;
+	display: block;
+	margin: auto;
+	list-style: none;
+    width: 600px;
+    margin: 0% 50%
+    }
+
+#menu li
+    
+    {
+    color: #DBDADA;
+    font-family:"helvetica";
+    list-style: none;
+    float:right;
+    margin: 0% 1%;
+    
+    }
+    
+    #menu li a {
+    
+    color: #DBDADA;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+        
+    }
+    
+    #menu li a:hover { 
+    color: #fff;
+        
+    }
+
 .bee
 {
-width: 60%;
+width: 20%;
+margin: -5% 0% 10% -10%;
+position: absolute;
 }
 
 .part1
 {
 width: 100%
 }
+
+.eye1
+
+{
+        width: 12.4%;
+        position: absolute;
+        z-index: 2;
+        margin: -36.7% -15.3%;
+        display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1xpx rgba(0, 0, 0, 0);
+        }
+        
+        .eye1:hover 
+        {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+.eye2
+
+{
+        width: 16.5%;
+        position: absolute;
+        z-index: 2;
+        margin: -43.7% -37.5%;
+        display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1xpx rgba(0, 0, 0, 0);
+        }
+        
+        .eye2:hover 
+        {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
+.eye3
+
+{
+        width: 16.5%;
+        position: absolute;
+        z-index: 2;
+        margin: -45.7% 1.5%;
+        display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1xpx rgba(0, 0, 0, 0);
+        }
+        
+        .eye3:hover 
+        {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
 
 
 #hundred
@@ -81,13 +212,15 @@ color: #DBDADA
 
 p
         {
-        font-family:"Baskerville";
+        font-family:"Helvetica";
         letter-spacing: 2px;
         padding: 10px;
-        line-height: 1.35em;
-        margin: 2% 10% 2% 10%;
-        font-size:17px;
+        line-height: 1.7em;
+        margin: 10% 5% 0% 5%;
+        font-size:20px;
         text-align: justify;
+        letter-spacing: 0.01em;
+        color: #DBDADA;
         }
 
     
@@ -112,23 +245,16 @@ p
 
 
 
-.section-one
-        {
-        position:relative;
-        padding: 10% 0% 10% 0%;
-        background: #;
-        max-width: 110%;
-        }
-
 #title
 
 {
-font-family:"helvetica";
+font-family:helvetica;
 position: absolute;
-font-size: 30px;
+font-size: 50px;
 z-index: 1;
-margin: -20% 5%;
+margin: -18% 20% 0% 0%;
 color: #DBDADA;
+line-height: 1.7em;
 }
 
 #hundred-years
@@ -136,10 +262,10 @@ color: #DBDADA;
 {
 font-family:"helvetica";
 position: absolute;
-font-size: 70px;
+font-size: 30px;
 z-index: 1;
 margin: -14% 5%;
-color: #C4A7A7;
+color: #DBDADA;
 }
 
 #prove
@@ -149,7 +275,7 @@ font-family:"helvetica";
 position: absolute;
 font-size: 30px;
 z-index: 1;
-margin: -5% 5%;
+margin: -8% 5%;
 color: #DBDADA;
 }
 
@@ -161,6 +287,30 @@ z-index: 1;
 margin: 0% 0% 0% -50%;
 }
 
+.eye
+{width: 12.4%;
+position: absolute;
+z-index: 1;
+margin: 9.6% -6.1%;
+ display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+        
+        .eye:hover 
+        {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        }
+
 .quote
         {
         position:relative;
@@ -168,6 +318,71 @@ margin: 0% 0% 0% -50%;
         background: #A1BCBF;
         max-width: 100%;
         }
+
+.triangle
+
+{
+width: 100%;    
+position: absolute;
+z-index: 1;
+margin: -15% -50%;
+}
+
+.section-one
+        {
+        position:relative;
+        padding: 10% 0% 10% 0%;
+        max-width: 110%;
+        }
+#rand
+{
+font-size: 80px;
+font-family: "helvetica";
+color: #C4A7A7;
+margin:0% 150% 5% 6%;
+font-weight:700;
+
+}
+
+#one
+
+{
+font-size: 20px;
+color: #DBDADA;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 15% 15%;
+}
+
+#two
+
+{
+font-size: 20px;
+color: #DBDADA;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: -13% 15%;
+}
+
+#three
+
+{
+font-size: 20px;
+color: #DBDADA;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 15% 15%;
+}
+
+#four
+
+{
+font-size: 20px;
+color: #DBDADA;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: -13% 15%;
+}
 
 
 .the-typeface
@@ -205,7 +420,74 @@ cite
         font-size: 15px;
         }
 
+.triangle2
 
+{
+width:100%;
+position: absolute;
+margin: 10% 0% 0% -50%;
+}
+
+.career
+
+{
+
+background:#dbdada;
+color: #404041;
+padding-top: 5%;
+margin-top: 25%;
+    
+}
+
+
+
+.eye4
+{
+width: 12%;
+}
+
+.eye5
+{
+width: 12%;
+}
+
+.eye6
+{
+width: 12%;
+}
+
+.eye7
+{
+width: 12%;
+}
+
+.eye8
+{
+width: 12%;
+}
+
+.eye9
+{
+width: 12%;
+}
+
+#five
+{
+color:#404041;
+margin: 5% 15% -10% 15%;
+}
+
+#six
+{
+color:#404041;
+margin: 12% 15% -10% 15%;
+}
+
+#seven
+{
+color:#404041;
+margin: 12% 15% -10% 15%;
+}
         
 .quote2
         {
