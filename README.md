@@ -1,3 +1,3 @@
 Essay
 =====
-http://ingahampton.github.io/Essay/Essay.html
+http://ingahampton.github.io/Essay/essay.html
