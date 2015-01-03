@@ -84,7 +84,7 @@ h2
 .quote
         {
         position:relative;
-        padding: 5% 10% 5% 10%;
+        padding: 5% 10% 9% 10%;
         background: #97A371;
         max-width: 100%;
         }
@@ -122,8 +122,7 @@ blockquote
 cite
 
         {
-        margin-top:30px;
-        font-size: 15px
+        font-size: 15px;
         }
 
 
@@ -131,15 +130,10 @@ cite
 .quote2
         {
         position:relative;
-        padding: 5% 10% 5% 10%;
-        background: #F9C1B7;
+        padding: 5% 10% 10% 10%;
+        background: #C4A7A7;
         max-width: 100%;
         }
-
-
-
-
-
 
 .quote3
         {
