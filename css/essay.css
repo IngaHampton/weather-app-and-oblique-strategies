@@ -1,0 +1,179 @@
+*
+        {
+        padding:0;
+        margin:0;
+        font-size: 100%;
+        line-height: 1em;
+        }
+    
+body 
+        {
+        background-color:#404041; 
+        color: white;
+        text-align: center;
+        }
+    
+h1 
+        {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 1.35em;
+        font-family: "Quicksand";
+        font-weight: normal;
+        margin: 10px 0 10px 0;
+        }
+.bee
+{
+width: 60%;
+}
+
+
+
+p
+        {
+        font-family:"Quicksand";
+        letter-spacing: 2px;
+        padding: 10px;
+        line-height: 1.35em;
+        margin: 2% 10% 2% 10%;
+        font-size:17px;
+        text-align: justify;
+        }
+
+    
+
+.paul
+        {
+        position:relative;
+        padding: 10px 10px 13px 10px;
+        background: #404041;
+        max-width: 100%;
+        }
+
+
+.year
+{
+        position:relative;
+        padding: 10px 10px 13px 10px;
+        background: #404041;
+        max-width: 100%;
+}
+
+h2
+        {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 5px; 
+        line-height: 1.35em;
+        font-family: "Quicksand";
+        font-weight: normal;
+        margin: 10% 10% 10% 10%;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        }
+
+.section-one
+        {
+        position:relative;
+        padding: 10% 0% 10% 0%;
+        background: #;
+        max-width: 110%;
+        }
+
+
+.quote
+        {
+        position:relative;
+        padding: 5% 10% 5% 10%;
+        background: #97A371;
+        max-width: 100%;
+        }
+
+
+.the-typeface
+        {
+        position:relative;
+        padding: 1% 5% 6% 5%;
+        background: #EEAEAB;
+        max-width: 100%;
+        color:#404041
+        }
+
+.section2
+        {
+        position:relative;
+        padding: 10px 10px 10px 10px;
+        background: ;
+        max-width: 100%;
+        }
+
+
+blockquote
+
+        {
+        padding-top:60px ;
+        color:#fff;
+        font-size: 50px;
+        font-family: baskerville;
+        text-align: center;
+        margin: 0 150px;
+        }
+
+cite
+
+        {
+        margin-top:30px;
+        font-size: 15px
+        }
+
+
+        
+.quote2
+        {
+        position:relative;
+        padding: 5% 10% 5% 10%;
+        background: #F9C1B7;
+        max-width: 100%;
+        }
+
+
+
+
+
+
+.quote3
+        {
+        position:relative;
+        padding: 10px 10px 120px 10px;
+        background: #A1BCBF;
+        max-width: 100%;
+        }
+
+
+.footer
+  
+        {
+        margin: 0 40px 0 40px;
+        position:relative;
+        padding: 10px 10px 50px 10px;
+        background: #F69C00;
+        max-width: 100%;
+        }
+
+.box
+
+        {
+        position:relative;
+        padding: 10px 10px 10px 10px;
+        background: #404041;
+        max-width: 100%;
+        }
+
+.end
+
+{
+        position:relative;
+        padding: 5% 10% 5% 10%;
+        background: #97A371;
+        max-width: 100%;
+        }
