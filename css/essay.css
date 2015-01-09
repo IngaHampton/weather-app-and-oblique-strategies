@@ -649,6 +649,34 @@ letter-spacing: 0.01em;
 line-height: 1.7em;
 margin: 2% 15%;}
 
+#sixteen
+{font-size: 20px;
+color: #404041;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 2% 15%;}
+
+#seventeen
+{font-size: 20px;
+color: #404041;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 2% 15%;}
+
+#eighteen
+{font-size: 20px;
+color: #404041;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 2% 15%;}
+
+#nineteen
+{font-size: 20px;
+color: #404041;
+letter-spacing: 0.01em;
+line-height: 1.7em;
+margin: 2% 15%;}
+
 .box
 
         {
@@ -674,3 +702,23 @@ position: absolute;
         background: #97A371;
         max-width: 100%;
         }
+
+h2
+{
+       font-family:"Helvetica";
+        letter-spacing: 2px;
+        padding: 10px;
+        line-height: 1.7em;
+        margin: 0% 5% 0% 5%;
+        font-size:20px;
+        letter-spacing: 0.01em;
+        color: #DBDADA;
+        
+}
+
+#refer
+
+{
+font-size: 10px;
+margin: -1%;
+}
