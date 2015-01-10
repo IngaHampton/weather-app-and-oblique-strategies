@@ -2,7 +2,7 @@
 
 ##In August 2014 Paul Rand would have been One Hundred Years Old.
 
->“Design is so simple, that is why it is so complicated.”<
+>“Design is so simple, that is why it is so complicated.”
 
 **Paul Rand** was one of the worlds most influential and talented graphic designers of our time. His amazing work with IBM, UPS and NeXT has been seen as iconic and admirable even to this day. His outstanding career spanned over six decades starting as early as the 1930’s when he was still a teenager. By the time he was in his twenties, Rand had made quite an impact on book, magazine, advertising and package design. As one of the originators of the Swiss Style within graphic design, this style is used heavily within a lot of his work and has been adapted by many designers since. He was one of the reasons that the radical ideas of De Stijl, Russian Constructivism and the Bauhaus were brought into American commercial art and design. He was able to develop his own skills and learn from his students when he taught design at Yale University in New Haven for over two decades. It was here that he was able to spread his design techniques and inspirations to young aspiring designers that admired him. 
 
@@ -17,7 +17,7 @@ Rand’s reputation began in 1936 when he was given a job with Apparel Arts Maga
 
 A big stepping stone in the development for what we know as the Paul Rand style, was the cover art that he created for Direction Magazine. In 1938, publisher of Direction magazine Marguerite Trader Harris approached Rand and asked him to design a few covers for her magazine. As a payment, Rand was offered complete creative freedom in place of money. Rand took up on her offer and from 1938 to 1941he took the magazine into unexplored areas of graphic design. One of his most iconic covers was the 1940 christmas cover which reflected on Nazi-occupied Europe at the time. The cover incorporated a piece of barbed wire that crossed the cover that a ribbon on a box, along with red lots that represented blood droplets and a gift tag, this cover pushed the limits of graphic design to new levels. It was through this that Rand was able to develop, experiment and expand his design techniques which refined his style and allowed him to create the works we know him best for. According to graphic designer Louis Danziger:
 
->“He almost singlehandedly convinced business that design was an effective tool. Anyone designing in the 1950s and 1960s owed much to Rand, who largely made it possible for us to work. He more than anyone else made the profession reputable. We went from being commercial artists to being graphic designers largely on his merits.”<
+>“He almost singlehandedly convinced business that design was an effective tool. Anyone designing in the 1950s and 1960s owed much to Rand, who largely made it possible for us to work. He more than anyone else made the profession reputable. We went from being commercial artists to being graphic designers largely on his merits.”
 
 It was in 1941 at the age of twenty seven that Rand became an art director for the Weintraub Agency. This opportunity came about when William Weintraub, a partner of Esquire-Coronet, left to set up his own advertising agency and Rand decided to join. The agency went on to be the first “Jewish agency” that had acquired a reputable client list that included the likes of Revlon and Emerson Radios. The company grew considerably within a year. Rand usually took a step step and did not delegate to the staff very often. Although there were staff available, Rand generally preferred to design the work himself without the help of others. 
 
@@ -27,7 +27,7 @@ By 1946, Rand was starting to build quite a good reputation among the design ind
 
 Rand delved into art education once again after a meeting with Moholy-Nagy that made him realise that he had much more to learn.
 
->“I started reading because of a remark of Moholy-Nagy…I remember, Moholy asked me, “Do you read art criticism?” And I said, “No.” The only thing he said was, “Pity.” - Interview of with Steven Heller 1988<
+>“I started reading because of a remark of Moholy-Nagy…I remember, Moholy asked me, “Do you read art criticism?” And I said, “No.” The only thing he said was, “Pity.” - Interview of with Steven Heller 1988
 
 Rand soon became an avid reader, taking in as much information as he could and then projecting what he had learnt onto his designs. Although he believed that one learns best from practise, he soon learnt that you cannot practise what you do not know about. His own library contained many books that he would refer to often to keep the ideas and principles fresh in his mind. Some of his principles of design have been taken and quoted from books that he read and then incorporated into his own writings. During the 1950’s, Rand began to introduce these design theories and principles to his students at Yale.
 
