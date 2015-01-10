@@ -1,9 +1,8 @@
 #100 years of Paul Rand
 
-##In August this year Paul Rand would have been 100 years old. His contributions changed the design industry forever, proving that
+##In August 2014 Paul Rand would have been One Hundred Years Old.
 
->“Good design adds value of some kind, gives meaning, and, 
-not incidentally, can be sheer pleasure to behold”<
+>“Design is so simple, that is why it is so complicated.”<
 
 **Paul Rand** was one of the worlds most influential and talented graphic designers of our time. His amazing work with IBM, UPS and NeXT has been seen as iconic and admirable even to this day. His outstanding career spanned over six decades starting as early as the 1930’s when he was still a teenager. By the time he was in his twenties, Rand had made quite an impact on book, magazine, advertising and package design. As one of the originators of the Swiss Style within graphic design, this style is used heavily within a lot of his work and has been adapted by many designers since. He was one of the reasons that the radical ideas of De Stijl, Russian Constructivism and the Bauhaus were brought into American commercial art and design. He was able to develop his own skills and learn from his students when he taught design at Yale University in New Haven for over two decades. It was here that he was able to spread his design techniques and inspirations to young aspiring designers that admired him. 
 
