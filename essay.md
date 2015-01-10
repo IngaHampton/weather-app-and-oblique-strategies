@@ -1,6 +1,6 @@
 #100 years of Paul Rand
 
-##In August 2014 Paul Rand would have been One Hundred Years Old.
+##In August 2014 Paul Rand would have been one hundred years old.
 
 >“Design is so simple, that is why it is so complicated.”
 
