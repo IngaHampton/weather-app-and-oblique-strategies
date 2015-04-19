@@ -1289,3 +1289,51 @@ text-decoration: none;
 color:#A8A8A8;
 }
 
+.menu { 
+	width: 100%;
+    background-color: black;
+    opacity: 0.6;
+	height: auto;
+	position: fixed;
+	margin-top: 0px;
+    min-width: auto;
+	max-width: 600px;
+    z-index: 100;
+    padding: 1% 29%;
+}
+.menu ul 
+
+    {
+    list-style: none;
+	display: block;
+	margin: auto;
+	list-style: none;
+    width: 800px;
+    margin: 0% 10%
+    }
+
+.menu li
+    
+    {
+    color: #DBDADA;
+    font-family:"helvetica";
+    list-style: none;
+    float:right;
+    margin: 1% 2%;
+    
+    }
+    
+    .menu li a {
+    
+    color: #DBDADA;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+        
+    }
+    
+    .menu li a:hover { 
+    color: #fff;
+        
+    }
+
