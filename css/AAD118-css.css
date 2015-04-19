@@ -83,7 +83,7 @@ p
 
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 25px;
     margin: 0% 20% 0% 20%;
     color: #A8A8A8;
@@ -1291,14 +1291,13 @@ color:#A8A8A8;
 
 .menu { 
 	width: 100%;
-    opacity: 1;
+    opacity: 0.9;
 	height: auto;
 	position: fixed;
-	margin-top: 0px;
     min-width: auto;
 	max-width: 600px;
     z-index: 100;
-    padding: 1% 29%;
+    padding: 0% 29%;
     background-image:  url(../images/title-img.jpg);
 background-size: cover;
 }
@@ -1310,14 +1309,17 @@ background-size: cover;
 	margin: auto;
 	list-style: none;
     width: 800px;
-    margin: 0% 10%
+    margin: 0% 5%;
+    padding: 10%;
     }
 
 .menu li
     
     {
     color: #DBDADA;
-    font-family:"helvetica";
+    font-family:"Yanone Kaffeesatz";
+    text-transform:uppercase;
+    font-weight: 200;
     list-style: none;
     float:right;
     margin: 1% 2%;
@@ -1338,3 +1340,11 @@ background-size: cover;
         
     }
 
+.logo
+{
+width:20%;
+margin-left: -25%;
+padding-top: 0%;
+position: absolute;
+    
+}
