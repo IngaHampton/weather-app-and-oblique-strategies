@@ -2,7 +2,7 @@
 
 [Book covers](https://www.flickr.com/photos/128425558@N08/sets/72157651004675900/)
 
-http://ingahampton.github.io/AAD118---Imaging-and-Data-Visualisation/AAD118-research.html
+http://ingahampton.github.io/AAD118---Imaging-and-Data-Visualisation/AAD118-Research.html
 
 ## Imaging and Data Visualisation
 
