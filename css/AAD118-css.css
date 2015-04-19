@@ -11,13 +11,13 @@ body
 background-color: #E6E7E8;
 }
 
-.title
+#title
 {
 width: 100%;
 }
 
 
-.photography
+#photography
 {
 width: 100%;
 margin-top: -1%;
@@ -1291,8 +1291,7 @@ color:#A8A8A8;
 
 .menu { 
 	width: 100%;
-    background-color: black;
-    opacity: 0.6;
+    opacity: 1;
 	height: auto;
 	position: fixed;
 	margin-top: 0px;
@@ -1300,6 +1299,8 @@ color:#A8A8A8;
 	max-width: 600px;
     z-index: 100;
     padding: 1% 29%;
+    background-image:  url(../images/title-img.jpg);
+background-size: cover;
 }
 .menu ul 
 
