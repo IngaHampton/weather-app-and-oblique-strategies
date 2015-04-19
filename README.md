@@ -2,6 +2,8 @@
 
 [Book covers](https://www.flickr.com/photos/128425558@N08/sets/72157651004675900/)
 
+http://ingahampton.github.io/AAD118---Imaging-and-Data-Visualisation/AAD118-research.html
+
 ## Imaging and Data Visualisation
 
 Imaging and Data Visualisation is a module that explores one of my favourite types of communication, non-verbal. Through only photographic, illustrative and diagrammatic ways a message must be portrayed. This could be difficult yet interesting to see the effects of what the pixels can do, from a perspective of a simple photograph to a purposeful mood board.
