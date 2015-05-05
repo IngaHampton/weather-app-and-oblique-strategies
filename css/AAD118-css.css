@@ -52,6 +52,14 @@ blockquote
     padding-bottom: 10%;
 }
 
+.part2
+
+{
+    background-color: #E6E7E8;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
 
 h1
 
@@ -75,8 +83,22 @@ h2
     text-transform: uppercase;
     margin: 0% 0% 0% 0%;
     color: black;
-    padding: 5% 0% 1% 20%;
+    padding: 5% 20% 1% 20%;
     opacity: 0.5;
+    
+}
+
+h3
+
+{
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 0% 0% 0% 0%;
+    color: black;
+    padding: 5% 20% 1% 20%;
+    opacity: 0.5;
+    text-align: center;
     
 }
 
@@ -85,10 +107,11 @@ p
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0% 20% 0% 20%;
     color: #A8A8A8;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 
@@ -1354,4 +1377,170 @@ position: absolute;
 
 {
 width: 100%;
+}
+
+.virtigo-images
+{
+width: 20%;
+display: inline;
+padding: 5% 10% 5% 15%;
+margin-left: 15%;
+}
+
+.virtigo-images1
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.virtigo-images1:hover {
+  opacity: 1;
+
+}
+
+.virtigo-images2
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.virtigo-images2:hover {
+  opacity: 1;
+
+}
+
+.seven-images
+{
+width: 20%;
+display: inline;
+margin-left: 30%;
+}
+
+.seven-images1
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.seven-images1:hover {
+  opacity: 1;
+
+}
+
+.seven-images2
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.seven-images2:hover {
+  opacity: 1;
+
+}
+
+}
+
+.monsters-inc
+{
+width: 20%;
+display: inline;
+}
+
+.monsters-inc1
+{
+    width: 20%;
+    padding-top: 2%;
+    margin-left: 30%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.monsters-inc1:hover {
+  opacity: 1;
+
+}
+
+.monsters-inc2
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.monsters-inc2:hover {
+  opacity: 1;
+
+}
+
+.penguin
+{
+width: 20%;
+display: inline;
+}
+
+.penguin1
+{
+    width: 20%;
+    padding-top: 2%;
+    margin-left: 20%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.penguin1:hover {
+  opacity: 1;
+
+}
+
+.penguin2
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.penguin2:hover {
+  opacity: 1;
+
+}
+
+.penguin3
+{
+    width: 20%;
+    padding-top: 2%;
+    opacity: 0.7;
+     transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.penguin3:hover {
+  opacity: 1;
+
 }
