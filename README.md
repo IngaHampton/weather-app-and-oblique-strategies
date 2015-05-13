@@ -3,11 +3,11 @@
 
 [Research](http://ingahampton.github.io/AAD118/AAD118-Research.html)
 
-[Markdown Research](https://github.com/IngaHampton/AAD118/blob/gh-pages/AAD118-markdown.md)
+[Micro](https://www.flickr.com/photos/128425558@N08/sets/72157651912092031)
 
-[Photographs]()
+[Macro](https://www.flickr.com/photos/128425558@N08/sets/72157651971657926)
 
 [Book covers](https://www.flickr.com/photos/128425558@N08/sets/72157651004675900/)
 
-[Infrographic]()
+[Infographic](https://www.flickr.com/photos/128425558@N08/16804156723/in/dateposted-public/)
 
