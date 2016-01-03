@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="132px" height="90px"
+	 viewBox="0 0 132 90" enable-background="new 0 0 132 90" xml:space="preserve">
+<title>fog</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Cloud-Fog-Alt" sketch:type="MSLayerGroup">
+		<g id="Layer_1_1_" sketch:type="MSShapeGroup">
+			<path id="fog" fill="#CECCCD" d="M3.522,65.997c-0.786-1.938-1.419-3.945-1.944-6.001H132c0,2.053-0.21,4.045-0.543,6.001H3.522
+				L3.522,65.997z M24.782,5.998C31.665,2.184,39.574,0,47.999,0c8.418,0,16.309,2.19,23.183,5.998H24.782L24.782,5.998z
+				 M0.417,41.998C0.672,39.952,1.071,37.957,1.578,36h121.199c1.652,1.839,3.117,3.844,4.365,5.998H0.417L0.417,41.998z M3.522,30
+				c0.843-2.08,1.839-4.078,2.952-6.001h83.054c0.12,0.204,0.252,0.405,0.368,0.615c1.992-0.342,4.016-0.615,6.1-0.615
+				c7.354,0,14.189,2.214,19.883,6.001H3.522L3.522,30z M10.564,17.999c1.74-2.169,3.675-4.165,5.761-6h63.372
+				c2.07,1.83,3.979,3.84,5.71,6H10.564L10.564,17.999z M131.454,53.996H0.417C0.171,52.027,0,50.035,0,47.998h129.906
+				C130.587,49.928,131.109,51.932,131.454,53.996L131.454,53.996z M129.906,71.998c-0.742,2.097-1.666,4.102-2.764,6H10.564
+				c-1.515-1.887-2.871-3.897-4.089-6H129.906L129.906,71.998z M16.325,83.998h106.449c-2.039,2.275-4.341,4.303-6.896,5.998H24.782
+				C21.734,88.311,18.92,86.275,16.325,83.998L16.325,83.998z"/>
+		</g>
+	</g>
+</g>
+<rect x="-138.5" y="-169.5" fill="#5C5C5E" stroke="#000000" stroke-miterlimit="10" width="93" height="99"/>
+</svg>
