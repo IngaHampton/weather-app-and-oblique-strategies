@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+    
+<script>
+    
+    
+// -----------------------snow--------------------------------
+
+//I have taken and modified the code for the snow from this website:
+
+// http://thecodeplayer.com/walkthrough/html5-canvas-snow-effect
+
+function DoSnow(){
+	//canvas init
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	//canvas dimensions
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H * 0.6;
+	
+	//snowflake particles
+	var mp = 500; //max particles
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random(), //x-coordinate
+			y: Math.random() * H, //y-coordinate
+			r: Math.random()*1.5, //radius
+			d: Math.random()*mp //density
+		});
+	}
+	
+	//draw the flakes
+	function draw()
+	{
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 1)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x * W, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+	}
+	
+	//Function to move the snowflakes
+	var angle = 0;
+	function update()
+	{
+        W = window.innerWidth;
+	    H = window.innerHeight * 0.6;
+	    canvas.width = W;
+	    canvas.height = H;
+		angle += 0.00;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			
+			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+			p.x += (Math.sin(angle) * 2) / W;
+			
+			//Sending flakes back from the top when it exits
+
+			if(p.x > 1.05 || p.x < -0.05 || p.y > H + 5)
+			{
+				particles[i] = {x: Math.random(), y: -10, r: p.r, d: p.d};
+			}
+		}
+        
+        draw();
+	}
+	
+	//animation loop
+	setInterval(update, 33);
+}
+    
+
+  // -----------------------snow add on--------------------------------    
+    
+    
+    
+    
+</script>
+    
+<style>
+    
+*
+{
+    padding:0;
+    margin:0;
+    font-size: 100%;
+    line-height: 1em;
+
+} 
+    
+h1
+    {
+    margin-top: 30px;
+    font-size: 40px;
+    }
+
+body
+    {
+    color: #487181;
+    background: #487181;
+    }
+
+.block
+    {width: 100%;
+    height:100px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    text-align:center;}
+    
+    
+     #canvas {
+	display: block;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    }
+    
+    
+    
+</style>
+
+</head>
+<body>
+    
+    
+ <canvas id="canvas"></canvas>
+   
+<div class="block">
+
+    <h1>Snow</h1> 
+    <a href="http://thecodeplayer.com/walkthrough/html5-canvas-snow-effect">Modified from this link</a>
+</div>
+    
+<script>window.onload = DoSnow();</script>
+</body>
+</html>
