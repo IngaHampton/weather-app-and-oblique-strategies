@@ -4,6 +4,7 @@
             document.body.innerHTML = 
             "<button id =\"reload\" onclick=\"location.reload();\"></button>\
             <canvas id=\"canvas\"></canvas>\
+            <img class=\"logo\"src=\"images/logo.svg\">\
             <marquee class=\"marquee1\" behavior=\"scroll\" direction=\"left\" scrollamount=\"2\"><img class=\"cloud1\" src=\"images/cloud.svg\"></marquee>\
             <marquee class=\"marquee2\" behavior=\"scroll\" direction=\"left\" scrollamount=\"3\"><img class=\"cloud2\" src=\"images/cloud.svg\"></marquee>\
             <marquee class=\"marquee3\" behavior=\"scroll\" direction=\"right\" scrollamount=\"3\"><img class=\"cloud3\" src=\"images/cloud.svg\"></marquee>\

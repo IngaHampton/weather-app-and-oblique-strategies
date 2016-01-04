@@ -746,3 +746,13 @@ sky-big-result
     margin-top: 10%;
     }
 }
+
+.logo
+{
+position: fixed;
+width: 8%;
+min-width: 90px;
+z-index: 1000;
+margin-top: 10px;
+margin-left: 10px;
+}
