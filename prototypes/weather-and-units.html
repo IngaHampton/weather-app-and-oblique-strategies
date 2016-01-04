@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    
+    function gettingJSON(){
+        var location = document.getElementById("fname").value;
+        
+        if (location == "")
+        {
+            document.getElementById("blank").innerHTML="Please insert in a city";
+            return;
+        }
+            
+        //the array with all the radio buttons
+        var unitRadioValues = document.getElementsByName("unit");
+        //checking the unit
+        var tempUnit = "metric"; //default temp is metric
+        for(var i = 0; i < unitRadioValues.length; i++)
+        {
+            if(unitRadioValues[i].checked)
+            {
+                tempUnit = unitRadioValues[i].value;
+                break; //early exit if the units are found before the end
+            }
+        }
+        
+        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json)
+        {
+            var unixTime = json.dt;
+            var milliseconds = unixTime * 1000.0;
+            var date = new Date(milliseconds);
+            document.write(json.main.temp + " " + date.toTimeString() + "<br>");
+        });
+        
+        document.write("The temperature in " + location + " is ");
+        $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json){
+            for (var i = 0; i < json.cnt; i++)
+            {
+                document.write(json.list[i].main.temp);
+                
+                var str = json.list[i].dt_txt;
+                var res = str.substr(11,8);
+                document.write(res + "<br>");
+            }
+        });
+    }
+    
+</script>
+</head>
+<body>
+    
+<p id="date"></p>
+    
+<button id = "getIt" onclick = "gettingJSON()">Get weather!</button>
+
+<form>
+  Location: <input type="text" id="fname"><br>
+</form>    
+    
+<p id="blank"></p>    
+    
+<form>
+<input type="radio" id = "metric" name="unit" value="metric">Celsius
+<br>
+<input type="radio" id = "imperial" name="unit" value="imperial">Fahrenheit
+<br>
+<input type="radio" id = "default" name="unit" value="default">Kelvin
+</form>
+
+    
+    
+
+
+</body>
+</html>

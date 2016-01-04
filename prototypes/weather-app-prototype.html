@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+</script>
+<script>
+    
+    
+    function gettingJSON(){
+        var location = document.getElementById("fname").value;
+        
+        if (location == "")
+        {
+            document.getElementById("blank").innerHTML="Please insert in a city";
+            return;
+        }
+            
+        //the array with all the radio buttons
+        var unitRadioValues = document.getElementsByName("unit");
+        //checking the unit
+        var tempUnit = "metric"; //default temp is metric
+        for(var i = 0; i < unitRadioValues.length; i++)
+        {
+            if(unitRadioValues[i].checked)
+            {
+                tempUnit = unitRadioValues[i].value;
+                break; //early exit if the units are found before the end
+            }
+        }
+        
+        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json)
+        {
+            var date = new Date();
+            document.write(json.main.temp + " " + date.toTimeString() + "<br>");
+        });
+        
+        document.write("The temperature in " + location + " is ");
+        $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json){
+            for (var i = 0; i < json.cnt; i++)
+            {
+                document.write(json.list[i].main.temp);
+                
+                var str = json.list[i].dt_txt;
+                var res = str.substr(11,8);
+                document.write(res + "<br>");
+            }
+        });
+    }
+    
+    
+    
+    // -----------------------snow add on--------------------------------
+    
+    window.onload = function(){
+	//canvas init
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	//canvas dimensions
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H;
+	
+	//snowflake particles
+	var mp = 100; //max particles
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random()*W, //x-coordinate
+			y: Math.random()*H+1, //y-coordinate
+			r: Math.random()*4+2, //radius
+			d: Math.random()*mp //density
+		})
+	}
+	
+	//Lets draw the flakes
+	function draw()
+	{
+		ctx.clearRect(0, 0, W, H);
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 1)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+		update();
+	}
+	
+	//Function to move the snowflakes
+	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+	var angle = 0;
+	function update()
+	{
+		angle += 0.01;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			//Updating X and Y coordinates
+			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+			//Every particle has its own density which can be used to make the downward movement different for each flake
+			//Lets make it more random by adding in the radius
+			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+			p.x += Math.sin(angle) * 2;
+			
+			//Sending flakes back from the top when it exits
+			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			if(p.x > W+5 || p.x < -5 || p.y > H)
+			{
+				if(i%3 > 0) //66.67% of the flakes
+				{
+					particles[i] = {x: Math.random()*W, y: -10, r: p.r, d: p.d};
+				}
+				else
+				{
+					//If the flake is exitting from the right
+					if(Math.sin(angle) > 0)
+					{
+						//Enter from the left
+						particles[i] = {x: -5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+					else
+					{
+						//Enter from the right
+						particles[i] = {x: W+5, y: Math.random()*H, r: p.r, d: p.d};
+					}
+				}
+			}
+		}
+	}
+	
+	//animation loop
+	setInterval(draw, 33);
+}
+
+  // -----------------------snow add on--------------------------------    
+    
+</script>
+
+<style>
+    
+
+    *
+{
+    padding:0;
+    margin:0;
+    font-size: 100%;
+    line-height: 1em;
+} 
+    
+body
+    
+    {
+        text-align: center;
+        background: grey;
+    }
+    
+    
+.h1-weather-app
+{
+
+    font-size: 20px;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    color: white;
+    z-index: 2px;
+}
+
+    
+    
+#info
+{
+    background-color: #8E7481;
+    width: 100%;
+    font-family: helvetica neue;
+    font-weight: 200;
+    height: 1136px;
+    width: 640px;
+    position: relative;
+}
+    
+.h2-weather
+{
+
+    font-size: 20px;
+    color: #8E7481;
+    margin-right: 330px;
+    font-weight: 500;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    
+}
+    
+.weather-input
+    
+    {
+    background: #fff;
+   position: absolute;
+    bottom: 0;
+    width: 640px;
+    height: 450px;
+        
+    }
+    
+.city-bar
+{
+
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #EAE8E9;
+    width: 400px;
+    height: 40px;
+    font: helvetica;
+    font-size: 25px;
+    font-weight: 500;
+    color: #B1AFB2;
+}
+
+.city-bar:focus
+    
+{
+     border-bottom: solid 5px #C48C91;
+}
+    
+hr
+{
+    margin: 5% 10% 8% 10%;
+    opacity: 0.4;
+}
+    
+li.radio
+{
+display: inline-block;
+position: relative;
+margin-bottom:50px;
+margin-right:20px;
+margin-left:5px;
+color: #8E7481;
+font-weight: 500;
+
+
+}
+    
+    
+#blank
+    
+    {
+    
+    padding-top: 3%;    
+        
+    }
+    
+#getIt
+    {
+    padding: 20px 30px;
+    background: #C48C91;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+     border-radius: 35px;
+    }
+    
+#getIt:active
+    {
+    background: #EAE8E9;
+    
+    }
+    
+#weather
+    {
+    margin-top: 10%;
+    background-color: #95627C;
+    width: 100%;
+    font-family: helvetica neue;
+    font-weight: 200;
+    height: 1136px;
+        width: 640px;
+    }
+    
+img.sky1
+    {
+    
+    position:relative;
+    z-index: 1px;
+    }
+    
+img.land1
+    {
+    
+    position:absolute;
+    z-index: 300px;
+    margin: -120px 0px 0px -320px;
+    }
+    
+canvas {
+	display: block;
+    height: 700px;
+    width: 640px;
+    position: absolute;
+    z-index: 300;
+    
+    
+}
+    
+.part
+    {
+    z-index: 1;
+    width: 25%;
+    position: absolute;
+    margin: -44% -35%;
+    -webkit-animation: rotation 40s infinite linear;}
+    
+    @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+    
+.mill
+    {
+    z-index: 1;
+    width: 15%;
+    position: absolute;
+    margin-left: -30%;
+    margin-top: -35%;
+    }
+
+    select
+    {
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #EAE8E9;
+    width: 200px;
+    height: 40px;
+    font: helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    color: #B1AFB2;
+    border-radius: 0px;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    }
+    
+    ::-ms-expand {
+  display: none;
+}
+    
+    </style>
+
+</head>
+<body>
+    
+    
+<div id="info">
+    
+<canvas id="canvas"></canvas> 
+    
+<img class="sky1" src="img/sky-1.jpg">
+    
+<img class="part" src="img/wind-mill-part.svg">
+<img class="mill" src="img/wind-mill.svg">
+    
+<img class="land1" src="img/land-1.svg">
+    
+<h1 class="h1-weather-app">Weather App.</h1>
+    
+
+ 
+<div class="weather-input">
+
+<h2 class="h2-weather">Input City</h2>
+    
+<input class="city-bar" type="text" id="fname" value="City"><br> 
+    
+<p id="blank"></p>      
+    
+
+    
+<form action="unit-lists">
+  <select name="units">
+    <option value="" disabled selected> Select a unit</option>
+    <option value="metric">Celcius</option>
+    <option value="saab">Fahrenheit</option>
+    <option value="fiat">Kelvin</option>
+  </select>  
+    
+<br>
+    
+<hr>
+    
+<button id = "getIt" onclick = "gettingJSON()">Submit</button>
+
+    
+</div>
+    
+    
+</div>
+
+    
+    
+</body>
+</html>
