@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	<title>innerHTML - 1</title>
+</head>
+<body>
+	<p id="weather"></p>
+
+	<script>
+		document.getElementById("weather").innerHTML = "Sunny";
+	</script>
+
+</body>
+</html>
+
+
+<!--
+
+Notes
+=====
+
+We can modify the content of an HTML element by using the innerHTML property. Here's the syntax:
+
+	document.getElementById(id).innerHTML = "Content goes here.";
+
+In the brackets after `getElementById` we're pinpointing the p with the id of "weather".
+
+Try changing "Sunny" to "Rainy" and you'll see the page change. I'll explore the other aspects of this (`document.getElementById(id)`) later, but I wanted to at least pick off this low hanging fruit.
+
+We've used this in our wee weather app:
+
+	document.getElementById("description").innerHTML = description;
+
+In our wee weather app we're using a variable `description` (paired with an id of "description") so that we can dynamically update the description based on what's returned from OpenWeatherMap.
+
+-->
