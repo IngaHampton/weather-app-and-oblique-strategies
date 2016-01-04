@@ -25,7 +25,7 @@ p
 font-size: 18px;
 font-family: 'Roboto', sans-serif;
 margin-top: 40px;
-font-weight: 300;
+font-weight: 500;
 margin: 0% 10%;
 line-height: 1.5em;
 }
@@ -106,6 +106,16 @@ canvas {
     z-index: 100;
     }
     
+a
+{color: #3F3F3F;
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
+margin-top: 40px;
+font-weight: 300;
+margin: 0% 10%;
+line-height: 1.5em;
+text-decoration: none;
+}
 
-
-
+a:hover
+{color: #CF817E}
