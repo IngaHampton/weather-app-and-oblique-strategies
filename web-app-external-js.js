@@ -267,7 +267,7 @@ function DoSnow(){
 		});
 	}
 	
-	//Lets draw the flakes
+	//draw the flakes
 	function draw()
 	{
 		
@@ -283,7 +283,7 @@ function DoSnow(){
 	}
 	
 	//Function to move the snowflakes
-	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+
 	var angle = 0;
 	function update()
 	{
@@ -295,15 +295,12 @@ function DoSnow(){
 		for(var i = 0; i < mp; i++)
 		{
 			var p = particles[i];
-			//Updating X and Y coordinates
-			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
-			//Every particle has its own density which can be used to make the downward movement different for each flake
-			//Lets make it more random by adding in the radius
+
+			//random by adding in the radius
 			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
 			p.x += (Math.sin(angle) * 2) / W;
 			
-			//Sending flakes back from the top when it exits
-			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			//flakes back from the top when it exits
 			if(p.x > 1.05 || p.x < -0.05 || p.y > H + 5)
 			{
 				particles[i] = {x: Math.random(), y: -10, r: p.r, d: p.d};
@@ -334,7 +331,7 @@ function DoRain(){
 	canvas.width = W;
 	canvas.height = H * 0.6;
 	
-	//snowflake particles
+	//rain particles
 	var mp = 700; //max particles
 	var particles = [];
 	for(var i = 0; i < mp; i++)
@@ -347,7 +344,7 @@ function DoRain(){
 		})
 	}
 	
-	//Lets draw the flakes
+	//drawing rain
 	function draw()
 	{
 		
@@ -366,8 +363,7 @@ function DoRain(){
 		
 	}
 	
-	//Function to move the snowflakes
-	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+	//Function to move the rain drops
 	var angle = 0;
 	function update()
 	{
@@ -379,14 +375,11 @@ function DoRain(){
 		for(var i = 0; i < mp; i++)
 		{
 			var p = particles[i];
-			//Updating X and Y coordinates
-			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
-			//Every particle has its own density which can be used to make the downward movement different for each flake
-			//Lets make it more random by adding in the radius and speed
+			
+			//random by adding in the radius and speed
 			p.y += ((Math.cos(angle+p.d) + 2) * 5) + 4;
 			
-			//Sending flakes back from the top when it exits
-			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			//Sending rain back from the top when it exits
 			if(p.x > 1.05 || p.x < -0.05 || p.y > H + 5)
 			{
 				particles[i] = {x: Math.random(), y: -10, r: p.r, d: p.d};
@@ -400,5 +393,5 @@ function DoRain(){
 	setInterval(update, 33);
 }
 
-  // -----------------------snow add on-------------------------------- 
+  // -----------------------rain-------------------------------- 
     
