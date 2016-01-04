@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+    
+<style>
+
+body
+    {text-align: center;}
+
+    
+.part
+    {
+     z-index: -10;    
+    width: 15%;
+    min-width: 180px;
+    position: absolute;
+    margin: 5% -2.2%;
+    -webkit-animation: rotation 10s infinite linear;}
+    
+    @-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+    
+.mill
+    {
+    z-index: 10;
+    width: 10%;
+    margin-top: 10%;
+    min-width: 150px;
+    }
+    
+</style>
+
+</head>
+<body>
+    
+   
+
+
+    
+<img class="part" src="images/wind-mill-part.svg">
+<img class="mill" src="images/wind-mill.svg">
+
+
+</body>
+</html>
