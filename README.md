@@ -8,7 +8,6 @@
 
 App and directing page - [Click Here](http://ingahampton.github.io/weather-app-and-oblique-strategies/weather-app-open-page.html)
 
----
 [Research](http://ingahampton.github.io/weather-app-and-oblique-strategies/research.html)
 
 [Prototypes](http://ingahampton.github.io/weather-app-and-oblique-strategies/prototypes.html)
