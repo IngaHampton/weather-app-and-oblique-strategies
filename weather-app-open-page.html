@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Weather App</title>
+    
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,900,700,500' rel='stylesheet' type='text/css'>
+
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    
+<link rel="stylesheet" href="web-app-open-page.css">
+    
+<script>
+    
+ // -----------------------snow--------------------------------
+
+//I have taken and modified the code for the snow from this website:
+
+// http://thecodeplayer.com/walkthrough/html5-canvas-snow-effect
+
+function DoSnow(){
+	//canvas init
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	//canvas dimensions
+	var W = window.innerWidth;
+	var H = window.innerHeight;
+	canvas.width = W;
+	canvas.height = H * 0.6;
+	
+	//snowflake particles
+	var mp = 500; //max particles
+	var particles = [];
+	for(var i = 0; i < mp; i++)
+	{
+		particles.push({
+			x: Math.random(), //x-coordinate
+			y: Math.random() * H, //y-coordinate
+			r: Math.random()*1.5, //radius
+			d: Math.random()*mp //density
+		});
+	}
+	
+	//Lets draw the flakes
+	function draw()
+	{
+		
+		ctx.fillStyle = "rgba(255, 255, 255, 1)";
+		ctx.beginPath();
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+			ctx.arc(p.x * W, p.y, p.r, 0, Math.PI*2, true);
+		}
+		ctx.fill();
+	}
+	
+	//Function to move the snowflakes
+	//angle will be an ongoing incremental flag. Sin and Cos functions will be applied to it to create vertical and horizontal movements of the flakes
+	var angle = 0;
+	function update()
+	{
+        W = window.innerWidth;
+	    H = window.innerHeight * 0.6;
+	    canvas.width = W;
+	    canvas.height = H;
+		angle += 0.00;
+		for(var i = 0; i < mp; i++)
+		{
+			var p = particles[i];
+			//Updating X and Y coordinates
+			//We will add 1 to the cos function to prevent negative values which will lead flakes to move upwards
+			//Every particle has its own density which can be used to make the downward movement different for each flake
+			//Lets make it more random by adding in the radius
+			p.y += Math.cos(angle+p.d) + 1 + p.r/2;
+			p.x += (Math.sin(angle) * 2) / W;
+			
+			//Sending flakes back from the top when it exits
+			//Lets make it a bit more organic and let flakes enter from the left and right also.
+			if(p.x > 1.05 || p.x < -0.05 || p.y > H + 5)
+			{
+				particles[i] = {x: Math.random(), y: -10, r: p.r, d: p.d};
+			}
+		}
+        
+        draw();
+	}
+	
+	//animation loop
+	setInterval(update, 33);
+}
+    
+</script>
+ 
+</head>
+<body>
+    
+<canvas id="canvas"></canvas>
+    
+<img class="sky-small" src="images/sky1.png">  
+<img class="sky-big" src="images/sky2.png"> 
+<img class="mountains2" src="images/mountains3.png"> 
+    
+<div class="block"> 
+                
+    <img class="part" src="images/wind-mill-part.svg">   
+    <img class="village" src="images/houses-middle.png"> 
+
+  
+    
+<div class="boxs1">
+<a href="http://ingahampton.github.io/weather-app-and-oblique-strategies/weather-app.html">
+<div class="weather-app1">
+<p>Weather App</p>    
+</div>
+</a>     
+<div class="weather-app1">
+<p>Research</p>    
+</div>  
+
+</div>
+<div class="boxs2">
+    
+<div class="weather-app2">
+<p>Prototypes</p>    
+</div>
+    
+<div class="weather-app2">
+<p>Style tile</p>    
+</div>
+</div>
+       
+        
+
+</div>
+<script>window.onload = DoSnow();</script>
+</body>
+</html>
