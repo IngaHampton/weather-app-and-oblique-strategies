@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Weather App</title>
+    
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,900,700,500' rel='stylesheet' type='text/css'>
+
+    
+    <style>
+        
+body
+        {text-align: center;}
+        
+.city-bar
+{
+
+    padding: 0.5vh;
+    border:none;
+    outline: none;
+    width: 60vw;
+    height: 4vh;
+    max-width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    color: #CECCCD;
+    border-bottom: solid 2px #CF817E;
+    margin-top: 15%;
+    
+}
+    
+.city-bar:focus
+    
+{
+     border-bottom: solid 2px #CECCCD;
+}
+
+    
+button#getIt
+    {
+    color: #CF817E;
+    border: none;
+    text-decoration: none;
+    border-bottom: 2px solid #CF817E;
+    padding-bottom: 1px;
+    background-color:transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    }
+    
+select
+    
+    {
+    width: 240px;
+   height: 34px;
+    margin-top: 30px;
+    outline: none;
+    overflow: hidden;
+    background: url(images/arrow.svg) no-repeat right #F6F6F4;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none; 
+    color: #C1C1C1;}
+        
+      .shadow
+    {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    
+    }    
+        
+</style>
+</head>
+<body>
+    
+
+  
+<input class="city-bar" onfocus = "this.value = ''" type="text" id="fname" value="Search City"><br>     
+    
+<p id="blank"></p>    
+    
+<form>
+    <select id = "unit">
+        <option value="" disabled selected> Select unit</option>
+        <option value = "metric">Celcius</option>
+        <option value = "imperial">Fahrenheit</option>
+    </select>
+</form>
+    
+<img class="shadow" src="images/shadow.png">
+             
+<button id = "getIt" onclick = "checkLocation()">Submit</button>
+
+
+
+</body>
+</html>

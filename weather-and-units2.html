@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    
+    function checkLocation()
+    {
+        var location = document.getElementById("fname").value;
+        var errorMessage = "Please insert a city";
+        var defaultMessage = "Search City";
+        if (location == "" || location == errorMessage || location == defaultMessage )
+        {
+            document.getElementById("fname").value= errorMessage;
+            return;
+        }
+            
+        var tempUnit = document.getElementById("unit").value == "" ? "metric" : document.getElementById("unit").value;
+        
+        
+        var currentWeatherQueryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15";
+        
+        $.getJSON(currentWeatherQueryURL,function(json)
+        {
+            if (location.toLowerCase() == json.name.toLowerCase())
+            {
+                gettingJSON();
+            }
+            else
+            {
+                document.getElementById("fname").value= errorMessage;
+            }
+        });
+    }
+    
+    function gettingJSON(){
+        
+        var location = document.getElementById("fname").value;
+               //the array with all the radio buttons
+        var tempUnit = document.getElementById("unit").value == "" ? "metric" : document.getElementById("unit").value;
+        //checking the unit
+        var currentWeatherQueryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15";
+        
+        
+        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json)
+        {
+            var unixTime = json.dt;
+            var milliseconds = unixTime * 1000.0;
+            var date = new Date(milliseconds);
+            document.write(json.main.temp + " " + date.toTimeString() + "<br>");
+        });
+        
+        document.write("The temperature in " + location + " is ");
+        $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q=" + location + "&units=" + tempUnit +  "&APPID=1a5a1ec681e8fc70d6d9c21da587aa15",function(json){
+            for (var i = 0; i < json.cnt; i++)
+            {
+                document.write(json.list[i].main.temp);
+                
+                var str = json.list[i].dt_txt;
+                var res = str.substr(11,8);
+                document.write(res + "<br>");
+            }
+        });
+    }
+    
+</script>
+</head>
+<body>
+    
+<p id="date"></p>
+    
+
+<form>
+<input type="text" id="fname" value="Search City"><br>
+</form>  
+
+    
+<form>
+    <select id = "unit">
+        <option value="" disabled selected> Select unit</option>
+        <option id = "metric" value = "metric">Celcius</option>
+        <option id = "imperial" value = "imperial">Fahrenheit</option>
+        <option id = "default" value = "default">Kelvin</option>
+    </select>
+</form>
+
+    <button id = "getIt" onclick = "gettingJSON()">Submit</button>
+
+</body>
+</html>
