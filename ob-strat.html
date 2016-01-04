@@ -103,9 +103,9 @@ button
 {
         background-color: #5D6E77;
         border: none;
+        border-radius: 4vh;
         outline: none;
-        color: #B1CDDB;
-        border-radius:3vw;
+        color: #fff;
         padding: 2vh 2vw;
         font-family: Roboto Slab;
         font-size: 1.5vh;
@@ -114,9 +114,20 @@ button
         margin-left: 2%;
         z-index: 200;
         position:absolute;
+        animation-duration: 800ms;
+   animation-name: blink;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
     
-        
 }
+    @keyframes blink {
+   from {
+      background:#5D6E77;
+   }
+   to {
+      background: #DE6F78;
+   }
+    
     
 </style>
       
@@ -250,14 +261,20 @@ var printNewStrategy = function ()
   </head>
   <body onload= "printNewStrategy()">
       
+      
+
+      
 <div class="dark"></div>
     
    <button onclick="printNewStrategy()">Click me</button>
       
- <img class="pipes" src="img/pipes-3.png">
+   
+      
+ <img class="pipes" src="img/pipes-4.png">
 <img class="hand" src="img/clock-hand.svg">
 <img class="hand2" src="img/clock-hand.svg">
-<img class="hand3" src="img/clock-hand.svg"> 
+<img class="hand3" src="img/clock-hand.svg">  
+
     <p id="demo"></p>
  
  
