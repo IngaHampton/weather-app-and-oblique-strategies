@@ -12,5 +12,7 @@
 
 [Prototypes](http://ingahampton.github.io/weather-app-and-oblique-strategies/prototypes.html)
 
+[style tile & images](https://www.flickr.com/photos/128425558@N08/albums/72157663090421956/with/23536790673/)
+
 [Weather App](http://ingahampton.github.io/weather-app-and-oblique-strategies/weather-app.html)
 
